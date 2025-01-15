@@ -386,12 +386,44 @@ nav ul li a:hover{
 }
 
 @media screen and (max-width: 576px) {
+    nav{
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+        margin: 20px;
+    }
+
+    #hero-section{
+        height: 100%;
+        width: calc(100% - 40px);
+    }
+
+    .div-container {
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+    .div-container h1{
+        padding: 20px;
+        font-size: 55px;
+    }
+    .div-container h5{
+        margin-top: 50px;
+    }
+    .div-container > div{
+        text-align: center;
+    }
+    .div-container > div > .btn-contant{
+        margin-bottom: 50px;
+    }
+    .div-content .assets{
+        width: 100%;
+        height: 100%;
+    }
     .card-container{
         flex-direction: column;
         margin: 10px;
         gap: 30px;
     }
-    
    .card-content-01,
    .descent-override{
     width: calc(100% - 80px);
@@ -415,6 +447,31 @@ nav ul li a:hover{
     height: 100%;
    }
    .secondary-main-section-container{
+    padding: 20px;
+   }
+
+   #subscribe{
+    margin: 100 auto;
+    width: calc(100% - 80px);
+    padding: 10px;
+   }
+   .subscribe-btn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+   }
+   .subscribe-btn-01{
+    border-radius: 10px;
+    width: 70%;
+   }
+   .subscribe-btn-02{
+    border-radius: 10px;
+    width: 50%;
+    margin-top: 20px;
+   }
+
+   #footer-container{
     padding: 20px;
    }
 }
